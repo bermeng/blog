@@ -14,7 +14,7 @@
     * [basis](f2e/angular/basis.md)
   * [FAQ](f2e/faq.md)
 * [Python](python/README.md)
-  * [Anaconda](python/Anaconda.md)
+  * [Anaconda](python/anaconda.md)
 * [Machine Learning](machine-learning/README.md)
   * [简介](machine-learning/jian-jie.md)
 * [Go](go/README.md)
