@@ -15,6 +15,7 @@
   * [FAQ](f2e/faq.md)
 * [Python](python/README.md)
   * [Anaconda](python/anaconda.md)
+  * [FAQ](python/FAQ.md)
 * [Machine Learning](machine-learning/README.md)
   * [简介](machine-learning/jian-jie.md)
 * [Go](go/README.md)
