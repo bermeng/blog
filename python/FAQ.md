@@ -2,14 +2,14 @@
 
 ## win10上已存在pthon2，安装python3
 
-1.下载并安装Python3
-2.手动配置环境变量
-3.将python3文件夹下的python.exe和pythonw.exe更名为python3.exe和pythonw3.exe
-4.对照第3步，将python2下的相应文件改名为python2
-5.两个版本python的pip共存：分别重新安装
+1. 下载并安装Python3
+2. 手动配置环境变量
+3. 将python3文件夹下的python.exe和pythonw.exe更名为python3.exe和pythonw3.exe
+4. 对照第3步，将python2下的相应文件改名为python2
+5. 两个版本python的pip共存：分别重新安装
     - ``python3 -m pip install --upgrade pip --force-reinstall``
     - ``python2 -m pip install --upgrade pip --force-reinstall``
-6.验证：
+6. 验证：
     - ``python3 -V``
     - ``pip3 -V``
     - ``python2 -V``
@@ -27,9 +27,9 @@
 
 ## numpy库安装
 
-1.下载numpy源
-2.终端切换到numpy文件所在目录
-3.执行命令：``pip install [numpy文件名]``
+1. 下载numpy源
+2. 终端切换到numpy文件所在目录
+3. 执行命令：``pip install [numpy文件名]``
 
 ## Python任意数量关键字实参声明
 > **

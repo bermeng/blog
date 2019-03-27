@@ -2,10 +2,10 @@
 
 ## 数据类型
 
-1.bool
-2.整型
-3.string
-4.派生类型
+1. bool
+2. 整型
+3. string
+4. 派生类型
     - pointer
     - array
     - struct
@@ -36,9 +36,9 @@ const(
 
 ## for循环
 
-1.``for a := 0; a < 10; a++ { }``
-2.``for a < 5 { }``
-3.``for { }``
+1. ``for a := 0; a < 10; a++ { }``
+2. ``for a < 5 { }``
+3. ``for { }``
 > ``range``关键字：用在for循环中遍历array、slice（切片）、channel、map
 
 ## slice（切片）
