@@ -12,6 +12,7 @@
     * [basis](f2e/react/basis.md)
   * [Angular](f2e/angular/README.md)
     * [basis](f2e/angular/basis.md)
+  * [FAQ](f2e/FAQ.md)
 * [Python](python/README.md)
   * [基础知识](python/ji-chu-zhi-shi.md)
 * [Machine Learning](machine-learning/README.md)
