@@ -24,7 +24,7 @@
 
 - ``iota``：特殊常量。``const``关键字出现时其被重置为0，然后在下一个``const``出现前，每出现一次``iota``，自动递增。
 
-```text
+```go
 const(
     a = iota
     b = iota
