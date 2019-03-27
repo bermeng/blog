@@ -39,6 +39,7 @@ const(
 1. ``for a := 0; a < 10; a++ { }``
 2. ``for a < 5 { }``
 3. ``for { }``
+
 > ``range``关键字：用在for循环中遍历array、slice（切片）、channel、map
 
 ## slice（切片）
@@ -50,6 +51,7 @@ const(
 ## nil
 
 > 空值语义
+
 - go中，任何类型未初始化时都对应一个空值
     - bool：false
     - 整型：0
