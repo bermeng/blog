@@ -28,6 +28,7 @@ cp = cherry-pick
 
 - ``git config --global user.name [username]``
 - ``git config --global user.email [useremail]``
+
 ## git设置和取消代理
 
 - ``git config --global http.proxy``
