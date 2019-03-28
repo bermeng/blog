@@ -23,6 +23,7 @@
 * [Git](git/README.md)
   * [SSH连接GitHub](git/ssh-connect-github.md)
   * [常用操作](git/basic-command.md)
+  * [git修改文件名大小写](git/file-name-case.md)
   * [FAQ](git/faq.md)
 * [Linux](linux/README.md)
   * [top命令](linux/top-command.md)
