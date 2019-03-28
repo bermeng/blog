@@ -16,6 +16,7 @@ $ git push
 ```
 
 - 方法二
+
 ```text
 # 设置git大小写敏感
 $ git config core.ignorecase false
