@@ -26,7 +26,11 @@
   * [git修改文件名大小写](git/file-name-case.md)
   * [FAQ](git/faq.md)
 * [Linux](linux/README.md)
-  * [top命令](linux/top-command.md)
+  * [Linux发展史](linux/linux-history.md)
+  * [Basis](linux/basis.md)
+  * [centos搭建ssr并配置锐速](linux/centos+ssr+speeder.md)
+  * [ubuntu下软件安装](linux/ubuntu.md)
+  * [FAQ](linux/faq.md)
 * [Algorithm](algorithm/README.md)
 * [Others](others/README.md)
 
