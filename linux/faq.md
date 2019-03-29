@@ -59,7 +59,7 @@ $ reboot
 
 ```shell
 # 下载
-$ mysql57-community-release-el6-5.noarch.rpm
+$ wget https://dev.mysql.com/get/https://dev.mysql.com/get/
 
 # 安装下载的rpm文件
 $ yum install mysql-community-release-el6-5.noarch.rpm 
@@ -67,7 +67,7 @@ $ yum install mysql-community-release-el6-5.noarch.rpm
 # 查看可安装源
 $ yum repolist enabled | grep mysql
 
-# 在/etc/yum.repos.d/mysql-community.repo文件中设置安装源
+# 在/etc/yum.repos.d/mysql-community.repo文件中可设置安装源
 
 # 使用yum安装mysql
 $ yum install mysql-server
