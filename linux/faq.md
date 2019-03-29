@@ -102,6 +102,5 @@ $ rpm -ivh mysql-community-server-5.7.16-1.el6.x86_64.rpm
 
 > 安装过程中会出现包依赖问题，通过yum安装相应包解决即可。
 
-## 安装完成后启动失败
-
+#### 注意
 > MySQL5.7.4之前的版本默认没有密码。之后的版本可通过``grep 'temporary password' /var/log/mysqld.log``命令找到初始密码，进行登录并修改密码。
