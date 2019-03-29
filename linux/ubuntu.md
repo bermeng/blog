@@ -30,11 +30,12 @@
 
 ## Ubuntu下解决make没有安装
 
-> ``apt install build-essential``
+> ``$ apt install build-essential``
 
 ## 更新git
 
 ```shell
-add apt-get-repository ppa:git-core/ppa
-apt-get update
-apt-get install git
+$ add apt-get-repository ppa:git-core/ppa
+$ apt-get update
+$ apt-get install git
+```
