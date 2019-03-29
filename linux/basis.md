@@ -68,6 +68,7 @@
     # 列出100行之后的行
     tail -n +100 /etc/man.config
     ```
+
 - ``pgrep -l ${name}``显示进程名和PID
 - ``&``：后台运行
 - ``nohup``：不挂起；exit退出当前账户后，进程仍继续运行
