@@ -1,4 +1,4 @@
-# centos下ssr搭建并配置锐速
+# Centos下ssr搭建并配置锐速
 
 ## 锐速安装
 

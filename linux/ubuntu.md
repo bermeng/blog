@@ -1,4 +1,4 @@
-# ubuntu下软件安装
+# Ubuntu下软件安装
 
 ## redis 安装
 
