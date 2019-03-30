@@ -29,18 +29,26 @@
 
 ## 文件查找
 
-> 一般首先考虑使用``whereis``，``locate``命令查找（基于数据库查找，速度快）；最后考虑使用``find``查找（查找硬盘，较慢）。
+- 一般首先考虑使用``whereis``，``locate``命令查找（基于数据库查找，速度快）
+- 最后考虑使用``find``查找（查找硬盘，较慢）
 
+#### locate
 > ``locate``根据``/var/lib/mlocate/mlocate.db``数据库进行查找。新建的文件需执行``updaedb``后才能被查到。
 
-> ``updatedb``根据``/etc/updatedb.conf``的设置查找系统硬盘内的文件名，并更新``/var/lib/mlocate/mlocate.db``内的数据文件）
+#### udatedb 
+> ``updatedb``根据``/etc/updatedb.conf``的设置查找系统硬盘内的文件名，并更新``/var/lib/mlocate/mlocate.db``内的数据文件。
 
+#### find
 > ``find / -perm +7000 -exec ls -l {} \;``
 
 - ``{}``代表find查找的内容
 - ``-exec``代表额外命令的开始
 - ``\;``代表额外命令的结束
 - ``ls -l {}``代表额外命令
+
+#### which
+
+> 查找可执行程序所在位置
 
 ## 其他 
 
