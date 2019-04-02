@@ -4,7 +4,7 @@
 
 ### 编辑配置.gitconfig文件
 
-```bash
+```Bash
 st = status
 ci = commit
 co = checkout
@@ -22,7 +22,7 @@ rb = rebase -i
 cp = cherry-pick
 ```
 
-- 也可使用单条命令：``git config --global alias.co checkout``
+> 也可使用单条命令：``git config --global alias.co checkout``
 
 ## git设置用户名/邮箱
 

@@ -4,7 +4,7 @@
 
 - 方法一
 
-```text
+```Bash
 # 修改文件名
 $ git mv FAQ.md faq.md
 
@@ -17,7 +17,7 @@ $ git push
 
 - 方法二
 
-```bash
+```Bash
 # 设置git大小写敏感
 $ git config core.ignorecase false
 
