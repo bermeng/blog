@@ -16,7 +16,7 @@ ssh-keygen -t rsa -f ~/.ssh/id_rsa_gitlab -C "useremail"
 ssh-keygen -t rsa -f ~/.ssh/id_rsa_github -C "useremail"
 ```
 
-- 如设置过全局用户名和邮箱，取消全局设置
+- 如果设置过全局用户名和邮箱，取消全局设置
 
 ```Bash
 git config --global --unset user.name
