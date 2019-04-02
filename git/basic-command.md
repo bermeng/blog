@@ -4,7 +4,7 @@
 
 ### 编辑配置.gitconfig文件
 
-```text
+```bash
 st = status
 ci = commit
 co = checkout

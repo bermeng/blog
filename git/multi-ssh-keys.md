@@ -4,35 +4,35 @@
 
 ## 生成密钥并配置
 
-1. 生成gitlab使用的ssh key，并指定文件名和存储位置（默认~/.ssh/id_rsa）
+- 生成gitlab使用的ssh key，并指定文件名和存储位置（默认~/.ssh/id_rsa）
 
-```shell
+```bash
 ssh-keygen -t rsa -f ~/.ssh/id_rsa_gitlab -C "useremail"
 ```
 
-2. 生成github使用的ssh key，并指定文件名存储位置
+- 生成github使用的ssh key，并指定文件名存储位置
 
-```shell
+```bash
 ssh-keygen -t rsa -f ~/.ssh/id_rsa_github -C "useremail"
 ```
 
-3. 如设置过全局用户名和邮箱，取消设置
+- 如设置过全局用户名和邮箱，取消全局设置
 
-```shell
+```bash
 git config --global --unset user.name
 git conig --global --unset user.email
 ```
 
-4. 在gitlab，github项目下分别设置对应的用户名和邮箱
+- 在gitlab，github项目下分别设置对应的用户名和邮箱
 
-```shell
+```bash
 git config user.name [username] 
 git config user.email [useremail]
 ```
 
-5. 在~/.ssh/目录下创建config文件，并添加以下内容
+- 在~/.ssh/目录下创建config文件，并添加以下内容
 
-```shell
+```bash
 # gitlab
 Host gitlab
     hostName [url]
@@ -45,25 +45,25 @@ Host github
     IdentityFile ~/.ssh/id_isa_github
 ```
 
-6. 启动ssh-agent，并将生成的ssh key添加到ssh-agent session中
+- 启动ssh-agent，并将生成的ssh key添加到ssh-agent session中
 
-```shell
+```bash
 ssh-agent bash
 ssh-add ~/.ssh/id_rsa_gitlab
 ssh-add ~/.ssh/id_rsa_github
 ```
 
-7. 查看是否添加成功
+- 查看是否添加成功
 
-```shell
+```bash
 ssh-add -l
 ```
 
-8. 将生成的ssh key分别添加到gitlab，github上
+- 将生成的ssh key分别添加到gitlab，github上
 
-9. 测试
+- 测试
 
-```shell
+```bash
 ssh -T git@github.com
 ssh -T git@[gitlab url]
 ```
@@ -74,7 +74,7 @@ ssh -T git@[gitlab url]
 
 - 将以下内容添加到``~/.profile``或``~/.bashrc``文件中
 
-```shell
+```bash
 env=~/.ssh/agent.env
 
 agent_load_env () { test -f "$env" && . "$env" >| /dev/null ; }

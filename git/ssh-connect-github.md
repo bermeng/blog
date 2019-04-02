@@ -17,7 +17,7 @@
 
 - 方法二 
 
-```text
+```bash
 git remote rm origin
 git add remote orgin [url]
 ```
