@@ -27,7 +27,11 @@
   * [配置多个ssh key](git/multi-ssh-keys.md)
   * [FAQ](git/faq.md)
 * [Linux](linux/README.md)
-  * [top命令](linux/top-command.md)
+  * [Linux发展史](linux/linux-history.md)
+  * [Basis](linux/basis.md)
+  * [Centos搭建ssr并配置锐速](linux/centos+ssr+speeder.md)
+  * [Ubuntu下软件安装](linux/ubuntu.md)
+  * [FAQ](linux/faq.md)
 * [Algorithm](algorithm/README.md)
 * [Others](others/README.md)
 
