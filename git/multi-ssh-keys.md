@@ -45,7 +45,7 @@ Host github
     IdentityFile ~/.ssh/id_isa_github
 ```
 
-6. 启动ssh-agent，并将生成的ssh key添加到ssh-agent
+6. 启动ssh-agent，并将生成的ssh key添加到ssh-agent session中
 
 ```shell
 ssh-agent bash
@@ -60,7 +60,6 @@ ssh-add -l
 ```
 
 8. 将生成的ssh key分别添加到gitlab，github上
-</br>
 
 9. 测试
 
@@ -69,9 +68,9 @@ ssh -T git@github.com
 ssh -T git@[gitlab url]
 ```
 
-## windows下gitbash设置ssh-agent自启动
+## windows下gitbash设置ssh-agent自启动并添加key
 
-> 设置自启动后，每次打开gitbash命令终端，不必再手动启动ssh-agent，手动添加密钥到ssh-agent。
+> 设置自启动后，每次打开gitbash命令终端，不必再手动启动ssh-agent，手动添加密钥到ssh-agent session中。
 
 - 将以下内容添加到``~/.profile``或``~/.bashrc``文件中
 
@@ -91,9 +90,11 @@ agent_run_state=$(ssh-add -l >| /dev/null 2>&1; echo $?)
 
 if [ ! "$SSH_AUTH_SOCK" ] || [ $agent_run_state = 2 ]; then
     agent_start
-    ssh-add
+    ssh-add ~/.ssh/id_rsa_gitlab
+    ssh-add ~/.ssh/id_rsa_github
 elif [ "$SSH_AUTH_SOCK" ] && [ $agent_run_state = 1 ]; then
-    ssh-add
+    ssh-add ~/.ssh/id_rsa_gitlab
+    ssh-add ~/.ssh/id_rsa_github
 fi
 
 unset env
