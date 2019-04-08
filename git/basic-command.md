@@ -26,32 +26,54 @@ cp = cherry-pick
 
 ## git设置用户名/邮箱
 
-- ``git config --global user.name [username]``
-- ``git config --global user.email [useremail]``
+```Bash
+# 设置用户名
+git config --global user.name [username]
 
-## git设置和取消代理
+# 设置邮箱
+git config --global user.email [useremail]
+```
 
-- ``git config --global http.proxy``
-- ``git config --global https.proxy``
-- ``git config --global --unset http.proxy``
-- ``git config --global --unset https.proxy``
+## git代理
 
-## git bash vim中使用粘贴
+```Bash
+# 设置代理
+git config --global http.proxy
+git config --global https.proxy
+
+# 取消设置
+git config --global --unset http.proxy
+git config --global --unset https.proxy
+```
+
+## Git Bash vim中使用粘贴
 
 - 设置为鼠标模式：``:set mouse-=a``
 - 鼠标右键粘贴
 
 ## git 文件不提交到远程仓库，但本地不删除
 
-- ``git rm --cached -r somedir(file)``
-- ``git commit -m ""``
-- ``git push``
+```Bash
+git rm --cached -r somedir(file)
+git commit -m ""
+git push
+```
 
 ## 远程分支重命名
 
-- 删除远程分支：``git push origin :branchname``（或者：``git push orgin --delete branchname``）
-- 重命名本地分支：``git branch -m old new``
-- 提交到远程仓库：``git push origin newname``
+```Bash
+# 删除远程分支
+# 方法一
+git push origin :branchname
+# 方法二
+git push orgin --delete branchname
+
+# 重命名本地分支
+git branch -m old new
+
+# 提交到远程仓库
+git push origin newname
+```
 
 ## 删除本地分支
 
@@ -59,8 +81,13 @@ cp = cherry-pick
 
 ## 跟踪分支
 
-- ``git checkout -b mber origin/mdev //mber分支跟踪远程分支mdev``
-- ``git checkout --track origin/mdev //本地创建一个新分支mdev并跟踪远程分支mdev``
+```Bash
+# mber分支跟踪远程分支mdev
+git checkout -b mber origin/mdev
+
+# 本地创建一个新分支mdev并跟踪远程分支mdev
+git checkout --track origin/mdev 
+```
 
 ## 查看尚未合并的分支
 
@@ -68,9 +95,19 @@ cp = cherry-pick
 
 ## 撤销修改
 
-- ``git reset HEAD <file> //将添加到暂存区的修改撤回到工作区``
-- ``git checkout --filename //将工作区的修改撤销``
-- ``git commit --amend //修改最近一次的提交内容``
+```Bash
+# 1.将添加到暂存区的修改撤回到工作区
+git reset HEAD <file>
+
+# 2.撤销对工作区文件的修改
+git checkout --filename
+
+# 3.修改最近一次的提交内容
+git commit --amend
+
+# 4.撤销某次提交
+git revert <commit id>
+```
 
 ## rebase
 
@@ -78,33 +115,47 @@ cp = cherry-pick
 
 ## stash
 
-- ``git stash``
-- ``git stash apply``
-- ``git stash pop``
-- ``git stash list``
-- ``git stash show -p``
-- ``git stash show stash@{id}``
-- ``git stash drop``
-- ``git stash branch [name]`` //创建stash分支
+```Bash
+git stash
+git stash apply
+git stash pop
+git stash list
+git stash show -p
+git stash show stash@{id}
+git stash drop
+# 创建stash分支
+git stash branch [name]
+```
 
 ## patch
 
-- ``git format-patch [commit id] [commit id]``
-- ``git format-patch [commit id] -n``
-- ``git format-patch [commit id``] //某次提交后的所有patch
+```Bash
+git format-patch [commit id] [commit id]
+git format-patch [commit id] -n
+
+# 某次提交后的所有patch
+git format-patch [commit id]
+```
 
 ## git在某个提交处检出分支
 
-```text
+```Bash
 git log
 git checkout commitID -b branch_name
 ```
 
 ## 查看差异
 
-- ``git diff //查看本地工作区修改与暂存区文件内容差别``
-- ``git diff --cached //提交到暂存区，未提交到仓库的修改``
-- ``git diff commitID //直接和某次提交进行比较``
+```Bash
+# 查看本地工作区修改与暂存区文件内容差异
+git diff
+
+# 提交到暂存区，未提交到仓库的修改
+git diff --cached 
+
+# 直接和某次提交进行比较
+git diff commitID
+```
 
 ## 快速合并(fast forward)
 
