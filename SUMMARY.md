@@ -32,6 +32,7 @@
   * [Basis](linux/basis.md)
   * [Centos搭建ssr并配置锐速](linux/centos+ssr+speeder.md)
   * [Ubuntu下软件安装](linux/ubuntu.md)
+  * [网络流量监控工具](linux/monitor-network.md)
   * [FAQ](linux/faq.md)
 * [Algorithm](algorithm/README.md)
 * [Others](others/README.md)
