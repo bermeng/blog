@@ -51,10 +51,10 @@ git config --global --unset https.proxy
 - 设置为鼠标模式：``:set mouse-=a``
 - 鼠标右键粘贴
 
-## git文件不提交到远程仓库，但本地不删除
+## 将文件从版本管理中删除
 
 ```Bash
-git rm --cached -r somedir(file)
+git rm --cached -r <dir/file>
 git commit -m ""
 git push
 ```
