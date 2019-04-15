@@ -51,7 +51,7 @@ git config --global --unset https.proxy
 - 设置为鼠标模式：``:set mouse-=a``
 - 鼠标右键粘贴
 
-## git 文件不提交到远程仓库，但本地不删除
+## git文件不提交到远程仓库，但本地不删除
 
 ```Bash
 git rm --cached -r somedir(file)
@@ -77,7 +77,13 @@ git push origin newname
 
 ## 删除本地分支
 
-- ``git branch -d branchname``
+```Bash
+# 删除
+git branch -d branchname
+
+# 强制删除
+git branch -D branchname 
+```
 
 ## 跟踪分支
 
@@ -89,9 +95,11 @@ git checkout -b mber origin/mdev
 git checkout --track origin/mdev 
 ```
 
-## 查看尚未合并的分支
+## 查看未合并分支
 
-- ``git branch --no-merged``
+```Bash
+git branch --no-merged
+```
 
 ## 撤销修改
 
@@ -109,9 +117,13 @@ git commit --amend
 git revert <commit id>
 ```
 
+## 版本回退
+
 ## rebase
 
-- ``git rebase --onto master server client``
+```Bash
+git rebase --onto master server client
+```
 
 ## stash
 

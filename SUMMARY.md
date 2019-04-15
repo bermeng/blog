@@ -9,7 +9,7 @@
     * [Flex布局](f2e/css/flex.md)
     * [Grid布局](f2e/css/grid.md)
   * [Vue](f2e/vue/README.md)
-  * [React](f2e/react/README.md
+  * [React](f2e/react/README.md)
   * [Angular](f2e/angular/README.md)
   * [Cordova](f2e/cordova/README.md)
     * [cordova签名app](f2e/cordova/sign-app.md)
@@ -34,5 +34,8 @@
   * [Ubuntu下软件安装](linux/ubuntu.md)
   * [FAQ](linux/faq.md)
 * [Algorithm](algorithm/README.md)
+* [Reading](reading/README.md)
+  * [Head First 设计模式](reading/headfirst-design-pattern/README.md)
+    * [策略模式](reading/headfirst-design-pattern/strategy.md)
 * [Others](others/README.md)
 
