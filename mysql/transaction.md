@@ -1,0 +1,75 @@
+# 数据库事务
+
+## 事务特性
+
+* A：Atomic，原子性
+* C：Consitent，一致性
+* I：Isolation，隔离性
+* D：Duration，持久性
+
+## 事务操作
+
+```SQL
+BEGIN;
+...     // sql语句
+COMMIT;
+```
+
+## 隔离级别
+
+> 对于并发事务，当操作同一条数据记录时有可能会造成数据不一致问题，包括脏读、不可重复读、幻读。为避免此类问题，SQL标准定义了四种隔离级别
+
+级别 | 脏读 | 不可重复读 | 幻读 |
+|-----|------|:----------:|----|
+| Read Uncommitted | Yes | Yes | Yes |
+| Read committed | | Yes | Yes |
+| Repeatable Read | | | Yes |
+| Serializable | | | | |
+
+### Read Uncommitted
+
+> 以下是两个并发事务的执行
+
+| 事务 A | 事务 B |
+|-------|--------|
+|SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;|SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;|
+|BEGIN;|BEGIN;|
+|UPDATE students SET name = 'Bob' WHERE id = 1;||
+||SELECT * FROM students WHERE id = 1;|
+|ROLLBACK;||
+||SELECT * FROM students WHERE id = 1;|
+||COMMIT;|
+
+### Read Commited
+
+> 以下是两个并发事务的执行
+
+| 事务 A | 事务 B |
+|-------|--------|
+|SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;|SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;|
+|BEGIN;|BEGIN;|
+||SELECT * FROM students WHERE id = 1;|
+|UPDATE students SET name = 'Bob' WHERE id = 1;||
+|COMMIT;||
+||SELECT * FROM students WHERE id = 1;|
+||COMMIT;|
+
+### Repeatable Read
+
+> 以下是两个并发事务的执行
+
+| 事务 A | 事务 B |
+|-------|--------|
+|SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;|SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;|
+|BEGIN;|BEGIN;|
+||SELECT * FROM students WHERE id = 5;|
+|INSERT INTO students(id, name) VALUES(5, 'John') 
+|COMMIT;||
+||SELECT * FROM students WHERE id = 5;|
+||	UPDATE students SET name = 'James' WHERE id = 5;|
+||SELECT * FROM students WHERE id = 5;|
+||COMMIT;|
+
+### Serializable
+
+> 所有事务依次执行，即串行。
