@@ -19,8 +19,8 @@ COMMIT;
 
 > 对于并发事务，当操作同一条数据记录时有可能会造成数据不一致问题，包括脏读、不可重复读、幻读。为避免此类问题，SQL标准定义了四种隔离级别
 
-|级别 | 脏读 | 不可重复读 | 幻读 |
-| --- | --- | :------: | ---- |
+| 级别 | 脏读 | 不可重复读 | 幻读 |
+| --- | --- | :---: | --- |
 | Read Uncommitted | Yes | Yes | Yes |
 | Read committed | | Yes | Yes |
 | Repeatable Read | | | Yes |
@@ -31,7 +31,7 @@ COMMIT;
 > 以下是两个并发事务的执行
 
 | 事务 A | 事务 B |
-|-------|--------|
+| :---: | :---: |
 |SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;|SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;|
 |BEGIN;|BEGIN;|
 |UPDATE students SET name = 'Bob' WHERE id = 1;||
@@ -45,7 +45,7 @@ COMMIT;
 > 以下是两个并发事务的执行
 
 | 事务 A | 事务 B |
-|-------|--------|
+| :---: | :---: |
 |SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;|SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;|
 |BEGIN;|BEGIN;|
 ||SELECT * FROM students WHERE id = 1;|
@@ -59,7 +59,7 @@ COMMIT;
 > 以下是两个并发事务的执行
 
 | 事务 A | 事务 B |
-|-------|--------|
+| :---: | :---: |
 |SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;|SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;|
 |BEGIN;|BEGIN;|
 ||SELECT * FROM students WHERE id = 5;|
