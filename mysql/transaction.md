@@ -1,11 +1,11 @@
 # 数据库事务
 
-## 事务特性
+## 事务ACID特性
 
-* A：Atomic，原子性
-* C：Consitent，一致性
-* I：Isolation，隔离性
-* D：Duration，持久性
+* Atomic，原子性
+* Consitent，一致性
+* Isolation，隔离性
+* Duration，持久性
 
 ## 事务操作
 
