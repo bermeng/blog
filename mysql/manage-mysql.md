@@ -25,8 +25,8 @@ show create table user;
 // 删除表
 drop table user;
 
-// 查看表创建时间
-select * from information_schema.tables where table_schema=user order by create_time desc;
+// 查看数据库中表创建时间；假设数据库名为test
+select create_time from information_schema.tables where table_schema='test' order by create_time desc;
 
 // 查看表中的所有字段
 show full columns from user;
