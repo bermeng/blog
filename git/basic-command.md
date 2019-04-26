@@ -128,14 +128,30 @@ git rebase --onto master server client
 ## stash
 
 ```Bash
-git stash
-git stash apply
-git stash pop
+// 将修改保存为stash条目
+git stash push <pathspec>
+git stash === git stash push // 将全部修改保存为stash条目
+
+// 从stash列表中弹出一个stash，并应用到当前工作区
+git stash pop stash@{id}
+
+// 和pop类似，但不从stash列表中删除 
+git stash apply stash@{id}
+
+// 查看所有stash
 git stash list
-git stash show -p
+
+// 将某个stash中的记录内容作为差异(diff)显示 
 git stash show stash@{id}
-git stash drop
-# 创建stash分支
+git stash show -p stash@{id}
+
+// 删除特定stash
+git stash drop stash@{id}
+
+// 清除所有stash
+git stash clear
+
+// 创建stash分支
 git stash branch [name]
 ```
 
