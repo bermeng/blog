@@ -1,6 +1,6 @@
 # css居中
 
-> 绝对定位和transform
+> 绝对定位 + transform
 
 ```CSS
 .center {
