@@ -101,6 +101,26 @@ git checkout --track origin/mdev
 git branch --no-merged
 ```
 
+## ..
+
+```Bash
+# 查看存在于dev但不存在于master中的提交
+git log master..dev
+
+# 以下两条命令也可，并可以指定多个引用
+git log dev ^master
+git log dev not master
+```
+
+## ...
+
+```Bash
+# 查看分别在master和dev中非两者共有的提交
+git log master...dev
+```
+
+## ...
+
 ## 撤销修改
 
 ```Bash
@@ -117,42 +137,54 @@ git commit --amend
 git revert <commit id>
 ```
 
-## 版本回退
-
 ## rebase
 
+> 将某一分支上的修改移动到另一分支上。变基会使提交历史看起来很整洁（一条直线，没有分叉）
+
+[参考](https://progit.bootcss.com/#rbdiag_h)
+
+#### 原理
+
+* 找到当前分支和基底分支的共同祖先
+* 对比当前分支相对于该祖先的修改，提取修改并存为临时文件
+* 将当前分支指向目标基底，然后将保存的临时修改依次应用。
+
 ```Bash
-git rebase --onto master server client
+# 将dev分支上的修改移动到master分支
+git rebase master dev 
+
+# (dev和feature有共同的祖先)选中在feature中但不在dev中的修改，将其重放到master分支上
+git rebase --onto master dev feature
 ```
 
 ## stash
 
 ```Bash
-// 将修改保存为stash条目
+# 将修改保存为stash条目
 git stash push <pathspec>
-git stash === git stash push // 将全部修改保存为stash条目
+# git stash 等同于 git stash push 即，将全部修改保存为stash条目
 
-// 从stash列表中弹出一个stash，并应用到当前工作区
+# 从stash列表中弹出一个stash，并应用到当前工作区
 git stash pop stash@{id}
 
-// 和pop类似，但不从stash列表中删除 
+# 和pop类似，但不从stash列表中删除 
 git stash apply stash@{id}
 
-// 查看所有stash
+# 查看所有stash
 git stash list
 
-// 将某个stash中的记录内容作为差异(diff)显示 
+# 将某个stash中的记录内容作为差异(diff)显示 
 git stash show stash@{id}
 git stash show -p stash@{id}
 
-// 删除特定stash
+# 删除特定stash
 git stash drop stash@{id}
 
-// 清除所有stash
+# 清除所有stash
 git stash clear
 
-// 创建stash分支
-git stash branch [name]
+# 创建stash分支
+git stash branch <name>
 ```
 
 ## patch

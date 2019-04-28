@@ -46,7 +46,7 @@
 
 ## 变量作用域
 
-- L、E、G、B
+- L(local)、E(enclosed)、G(global)、B(bulit-in)
 - 查找规则：L -> E -> G -> B
 - python中只有module、class及函数（def、lambda）才会引入新的作用域
 
