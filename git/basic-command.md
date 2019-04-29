@@ -2,7 +2,7 @@
 
 ## 配置别名
 
-### 编辑配置.gitconfig文件
+#### 编辑配置.gitconfig文件
 
 ```Bash
 st = status
@@ -118,8 +118,6 @@ git log dev not master
 # 查看分别在master和dev中非两者共有的提交
 git log master...dev
 ```
-
-## ...
 
 ## 撤销修改
 
