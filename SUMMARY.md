@@ -5,6 +5,7 @@
   * [JS](f2e/js/README.md)
     * [类数组对象](f2e/js/array-like.md)
     * [箭头函数](f2e/js/arrow-func.md)
+    * [ES6模块导入/导出](f2e/js/export-import.md)
   * [CSS](f2e/css/README.md)
     * [传统盒模型](f2e/css/legacy.md)
     * [Flex布局](f2e/css/flex.md)
