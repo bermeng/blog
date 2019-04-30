@@ -3,7 +3,7 @@
 ## centos下安装jdk
 
 
-```shell
+```Bash
 # 查找centos中是否已安装有默认的openjdk
 $ rpm -qa | grep java
 
@@ -23,7 +23,7 @@ $ ln -s /usr/java/jdk1.7.0/bin/java java
 export JAVA_HOME=/usr/java/jdk1.7.0_55  
 export JRE_HOME=$JAVA_HOME/jre  
 export PATH=$PATH:$JAVA_HOME/bin  
-export CLASSPATH=./:$JAVA_HOME/lib:$JAVA_HOME/jre/lib 
+export CLASSPATH=./:$JAVA_HOME/lib:$JRE_HOME/lib 
 
 # 配置完成后，检测是否成功
 $ java -version
@@ -34,7 +34,7 @@ $ sudo yum install glibc.i686
 
 ## 设置ip配置永久生效  
 
-```shell
+```Bash
 $ vi /etc/sysconfig/network-scripts/ifcfg-eth0
 # 将onboot设置为yes即可。
 ```
@@ -46,7 +46,7 @@ $ vi /etc/sysconfig/network-scripts/ifcfg-eth0
 
 ## centos误删root用户家目录
 
-```shell
+```Bash
 # 创建root目录
 $ mkdir /root
 # 复制/etc/skel/下的隐藏文件到/root目录下
@@ -57,7 +57,7 @@ $ reboot
 
 ## centos6.5安装mysql
 
-```shell
+```Bash
 # 下载
 $ wget https://dev.mysql.com/get/https://dev.mysql.com/get/
 
@@ -89,7 +89,7 @@ $ service mysql restart
 
 ## centos本地安装mysql  
 
-```shell
+```Bash
 # 将mysql的rpm包上传到centos执行以下命令
 
 $ rpm -ivh mysql-community-common-5.7.16-1.el6.x86_64.rpm
