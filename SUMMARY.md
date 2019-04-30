@@ -49,8 +49,8 @@
   * [网络流量监控工具](linux/monitor-network.md)
   * [FAQ](linux/faq.md)
 * [Algorithm](algorithm/README.md)
+* [Design Pattern](design-pattern/README.md)
+  * [Head First 设计模式](design-pattern/headfirst-design-pattern/README.md)
+    * [策略模式](design-pattern/headfirst-design-pattern/strategy.md)
 * [Reading](reading/README.md)
-  * [Head First 设计模式](reading/headfirst-design-pattern/README.md)
-    * [策略模式](reading/headfirst-design-pattern/strategy.md)
 * [Others](others/README.md)
-
