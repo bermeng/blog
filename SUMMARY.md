@@ -17,6 +17,7 @@
   * [Vue](f2e/vue/README.md)
   * [React](f2e/react/README.md)
   * [Angular](f2e/angular/README.md)
+  * [Win10下安装和配置Yarn](f2e/yarn.md)
   * [Cordova](f2e/cordova/README.md)
     * [cordova签名app](f2e/cordova/sign-app.md)
   * [浏览器内核](f2e/browser.md)
