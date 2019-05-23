@@ -55,4 +55,6 @@
   * [Head First 设计模式](design-pattern/headfirst-design-pattern/README.md)
     * [策略模式](design-pattern/headfirst-design-pattern/strategy.md)
 * [Reading](reading/README.md)
+    * [UED](reading/ued/README.md)
+      * [简约至上](reading/ued/simplicity.md)
 * [Others](others/README.md)
