@@ -16,6 +16,7 @@
     * [margin](f2e/css/margin.md)
     * [等宽字体](f2e/css/fixed-width-font.md)
   * [Vue](f2e/vue/README.md)
+    * [组件通信方式](f2e/vue/component-comm.md)
   * [React](f2e/react/README.md)
   * [Angular](f2e/angular/README.md)
   * [Win10下安装和配置Yarn](f2e/yarn.md)
