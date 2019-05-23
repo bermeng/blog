@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [F2E](f2e/README.md)
+* [FE](f2e/README.md)
   * [JS](f2e/js/README.md)
     * [类数组对象](f2e/js/array-like.md)
     * [箭头函数](f2e/js/arrow-func.md)
