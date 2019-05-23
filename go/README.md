@@ -1,3 +1,3 @@
 # Go
-- [Basis](go/basis.md)
-- [FAQ](go/faq.md)
+- [Basis](./go/basis.md)
+- [FAQ](./go/faq.md)
