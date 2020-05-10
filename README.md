@@ -11,7 +11,7 @@
 
 ## 文章目录
 
-- [F2E](f2e/README.md)
+- [FE](f2e/README.md)
 - [Python](python/README.md)
 - [Machine Learning](machine-learning/README.md)
 - [Go](go/README.md)

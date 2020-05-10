@@ -72,7 +72,7 @@ ssh -T git@[gitlab url]
 
 > 设置自启动后，每次打开gitBash命令终端，不必再手动启动ssh-agent，手动添加密钥到ssh-agent session中。
 
-- 将以下内容添加到``~/.profile``或``~/.Bashrc``文件中
+- 将以下内容添加到``~/.profile``或``~/.bashrc``文件中
 
 ```Bash
 env=~/.ssh/agent.env

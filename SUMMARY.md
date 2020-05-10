@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [F2E](f2e/README.md)
+* [FE](f2e/README.md)
   * [JS](f2e/js/README.md)
     * [类数组对象](f2e/js/array-like.md)
     * [箭头函数](f2e/js/arrow-func.md)
@@ -14,9 +14,12 @@
     * [display属性](f2e/css/display.md)
     * [DOM节点](f2e/css/dom-node.md)
     * [margin](f2e/css/margin.md)
+    * [等宽字体](f2e/css/fixed-width-font.md)
   * [Vue](f2e/vue/README.md)
+    * [组件通信方式](f2e/vue/component-comm.md)
   * [React](f2e/react/README.md)
   * [Angular](f2e/angular/README.md)
+  * [Win10下安装和配置Yarn](f2e/yarn.md)
   * [Cordova](f2e/cordova/README.md)
     * [cordova签名app](f2e/cordova/sign-app.md)
   * [浏览器内核](f2e/browser.md)
@@ -53,4 +56,6 @@
   * [Head First 设计模式](design-pattern/headfirst-design-pattern/README.md)
     * [策略模式](design-pattern/headfirst-design-pattern/strategy.md)
 * [Reading](reading/README.md)
+    * [UED](reading/ued/README.md)
+      * [简约至上](reading/ued/simplicity.md)
 * [Others](others/README.md)
