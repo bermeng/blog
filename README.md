@@ -13,7 +13,7 @@
 
 - [FE](f2e/README.md)
 - [Python](python/README.md)
-- [Machine Learning](machine-learning/README.md)
+- [Machine Learning](ml/README.md)
 - [Go](go/README.md)
 - [Git](git/README.md)
 - [Linux](linux/README.md)
